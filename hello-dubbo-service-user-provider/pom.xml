@@ -58,6 +58,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/de.javakaffee/kryo-serializers -->
+        <dependency>
+            <groupId>de.javakaffee</groupId>
+            <artifactId>kryo-serializers</artifactId>
+            <version>0.42</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -65,7 +72,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>com.hhawking.hello.dubbo.service.user.provider.HelloDubboServiceUserProviderApplication</configuration>
+                <configuration>
+                    <mainClass>com.hhawking.hello.dubbo.service.user.provider.HelloDubboServiceUserProviderApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>

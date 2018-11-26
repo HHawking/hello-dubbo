@@ -55,6 +55,20 @@
             <artifactId>hello-dubbo-service-user-api</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/de.javakaffee/kryo-serializers -->
+        <dependency>
+            <groupId>de.javakaffee</groupId>
+            <artifactId>kryo-serializers</artifactId>
+            <version>0.42</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <version>2.0.2.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -62,7 +76,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>com.hhawking.hello.dubbo.service.user.consumer.HelloDubboServiceUserConsumerApplication</configuration>
+                <configuration>
+                    <mainClass>com.hhawking.hello.dubbo.service.user.consumer.HelloDubboServiceUserConsumerApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
