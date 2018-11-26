@@ -1,3 +1,20 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### TntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
 # Compiled class file
 *.class
 
@@ -21,3 +38,14 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+### JRebel ###
+rebel.xml
+
+### MAC ###
+.DS_Store
+
+### Other ###
+logs/
+temp/
+.rebel.xml.bak
